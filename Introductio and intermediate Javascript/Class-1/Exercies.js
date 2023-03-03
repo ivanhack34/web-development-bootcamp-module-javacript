@@ -197,7 +197,20 @@ function lifeInWeeks(age) {
     console.log(lifeInWeeks(25));
 */
 
-//?-Ejercicios 7- Seccion 9 (Clase )
+//?-Ejercicios 7- Seccion 9 (Clase 27)
+
+/*
+function bmiCalculator(weight, height) {
+   const bmi = weight / (height * height);
+   return Math.round(bmi);
+ }
+//Esta funcion buscara el peso y la altura. Para luego crear una variable dentro de la funcion
+//Donde esta se divida el peso / (altura * altura). Donde retorna el resultado dado de esa variable
+//Donde con el metodo Math.Round puede redondear el resultado como tal para tener un numero exacto.
+ 
+ const bmi = bmiCalculator(65, 1.8);
+ console.log(bmi);
+ */
 
 
 
