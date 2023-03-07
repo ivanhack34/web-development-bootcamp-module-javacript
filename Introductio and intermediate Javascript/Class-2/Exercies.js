@@ -48,7 +48,7 @@ console.log(bmiCalculator(150, 5.7));
 //?2-Leap Year Challenge Exercise
 
 
-function isLeap(year) {
+//function isLeap(year) {
     
 /**************Don't change the code above****************/    
     
@@ -76,11 +76,130 @@ function isLeap(year) {
 
 /**************Don't change the code below****************/    
 
-}
+//}
 
 /*
 console.log(isLeap(2400)); // debería imprimir "Leap year."
 console.log(isLeap(1989)); // debería imprimir "Not leap year."
 */
 
-//?3- 
+//?Ejercicio 3 - modulo 10 - (Clase 9)
+
+/*
+function fizzBuzz(){
+    let output = [];
+    let count = 1;
+
+    if(count % 3 === 0 && count % 5 === 0) {
+        output.push("FizzBuzz");
+    }else if(count % 3 === 0){
+      output.push("Fizz");
+  }
+    else if(count % 5 === 0){
+        output.push("Buzz");
+    }
+    else{
+      output.push(count);
+    }
+
+    count++;
+    console.log(output);
+}
+
+//Debes probarlo en el inspecto consola de google. Primero se le ponen el valor donde se guardara
+//y el otro valor donde se sumara desde 1. Donde se crear una condicion donde si es multiplo de 3 o de 5 dara un mensaje
+//Si es solo de 3 o 5 dara un resultado y si no solo aparecera el 1 y se pondra incrementable cada vez que agreges uno nuevo
+
+console.log(fizzBuzz(20));
+*/
+
+//?Ejercicio 4 - Modulo 10 (Clase 10)
+
+
+//function whosPaying(names) {
+    
+  /******Don't change the code above*******/
+      /*
+      //Write your code here.
+      
+        // obtener un número aleatorio entre 0 y la longitud del arreglo de nombres
+    let randomIndex = Math.floor(Math.random() * names.length);
+    // usar el índice aleatorio para seleccionar un nombre de la lista
+    let randomName = names[randomIndex];
+    // devolver el mensaje con el nombre seleccionado
+    return randomName + " is going to buy lunch today!";
+      */
+      
+  
+  
+  /******Don't change the code below*******/    
+  //}
+
+//Para probarlo:
+
+/*
+let names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+let selectedName = whosPaying(names);
+console.log(selectedName);
+*/
+
+//?Ejercicio 5 - Modulo 10 (Clase 14)
+
+/*
+let numberOfBottles = 99
+while (numberOfBottles >= 0) {
+    let bottleWord = "bottle";
+    if (numberOfBottles === 1) {
+        bottleWord = "bottles";
+    } 
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+    console.log(numberOfBottles + " " + bottleWord + " of beer,");
+    console.log("Take one down, pass it around,");
+	numberOfBottles--;
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+}
+
+//lo que hace este codigo es que va a contar en un bucle whilw 99 linea de las botella que recorio o paso en este caso.
+//Donde cada vez esta disminuyendo por cada recorrido
+
+console.log(numberOfBottles());
+*/
+
+//?Ejercicio 6 - Modulo 10 (Clase 17)
+/*
+function fibonacciGenerator (n) {
+  //Do NOT change any of the code above 👆
+      
+      //Write your code here:
+      
+       // asegurarnos de que n sea mayor o igual a 2
+     if (n < 2) {
+      // devolver un arreglo con los primeros n números si n es menor a 2
+      return [0, 1].slice(0, n);
+    }
+    // crear un arreglo con los primeros dos números de la secuencia
+    let fibSeq = [0, 1];
+    // generar los siguientes n-2 números de la secuencia y agregarlos al arreglo
+    for (let i = 2; i < n; i++) {
+      let nextNum = fibSeq[i-2] + fibSeq[i-1];
+      fibSeq.push(nextNum);
+    }
+    // devolver el arreglo completo de la secuencia
+    return fibSeq;
+      
+    
+      
+      //Return an array of fibonacci numbers starting from 0.
+      
+  //Do NOT change any of the code below 👇
+  }
+
+  //PARA PROBARLA:
+
+  let fibSeq = fibonacciGenerator(10);
+console.log(fibSeq);
+*/
+
+
+  
+  
